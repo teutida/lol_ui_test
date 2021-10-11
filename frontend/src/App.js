@@ -18,7 +18,7 @@ class App extends Component {
     intervalID;
     async componentDidMount(){
       this.getData();
-      this.intervalID=setInterval(this.getData.bind(this),500);
+      this.intervalID=setInterval(this.getData.bind(this),5000);
     }
 componentWillUnmount(){
 clearInterval(this.intervalID);
